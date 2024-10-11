@@ -6,7 +6,9 @@ def load_race_schedule_data():
     # base_dir = os.path.abspath(os.path.join(os.path.dirname(__name__), '..', 'Datasets'))
     # file_path = os.path.join(base_dir, 'race_schedule.csv')
     file_path = "../Datasets/race_schedule.csv"
+    print("Kamali")
     return pd.read_csv(file_path) if os.path.exists(file_path) else None
+    
 
 def f1_circuit_world_map(year):
     df_race_schedule = load_race_schedule_data()
