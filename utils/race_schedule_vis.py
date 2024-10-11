@@ -4,7 +4,7 @@ import os
 
 def load_race_schedule_data():
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__name__), 'Datasets'))
-    file_path = os.path.join(base_dir, 'race_schedule.csv')    
+    file_path = os.path.join(base_dir, 'race_schedule.csv')
     return pd.read_csv(file_path)
     
 def f1_circuit_world_map(year):
