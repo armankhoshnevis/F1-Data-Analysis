@@ -1,0 +1,301 @@
+season,round,raceName,date,driverId,constructorId,grid,laps,position,status,points,time-ms,time-minsecmil,fastest-time
+2021,10,British Grand Prix,2021-07-18,max_verstappen,red_bull,2,17,1,Finished,3,1538426,25:38.426,1:30.013
+2021,10,British Grand Prix,2021-07-18,hamilton,mercedes,1,17,2,Finished,2,1539856,+1.430,1:29.937
+2021,10,British Grand Prix,2021-07-18,bottas,mercedes,3,17,3,Finished,1,1545928,+7.502,1:29.958
+2021,10,British Grand Prix,2021-07-18,leclerc,ferrari,4,17,4,Finished,0,1549704,+11.278,1:30.163
+2021,10,British Grand Prix,2021-07-18,norris,mclaren,6,17,5,Finished,0,1562537,+24.111,1:30.566
+2021,10,British Grand Prix,2021-07-18,ricciardo,mclaren,7,17,6,Finished,0,1569385,+30.959,1:30.640
+2021,10,British Grand Prix,2021-07-18,alonso,alpine,11,17,7,Finished,0,1581953,+43.527,1:31.773
+2021,10,British Grand Prix,2021-07-18,vettel,aston_martin,10,17,8,Finished,0,1582865,+44.439,1:31.687
+2021,10,British Grand Prix,2021-07-18,russell,williams,8,17,9,Finished,0,1585078,+46.652,1:32.208
+2021,10,British Grand Prix,2021-07-18,ocon,alpine,13,17,10,Finished,0,1585821,+47.395,1:32.183
+2021,10,British Grand Prix,2021-07-18,sainz,ferrari,9,17,11,Finished,0,1586224,+47.798,1:31.991
+2021,10,British Grand Prix,2021-07-18,gasly,alphatauri,12,17,12,Finished,0,1587189,+48.763,1:32.072
+2021,10,British Grand Prix,2021-07-18,raikkonen,alfa,17,17,13,Finished,0,1589103,+50.677,1:32.139
+2021,10,British Grand Prix,2021-07-18,stroll,aston_martin,15,17,14,Finished,0,1590605,+52.179,1:32.210
+2021,10,British Grand Prix,2021-07-18,giovinazzi,alfa,14,17,15,Finished,0,1591651,+53.225,1:32.457
+2021,10,British Grand Prix,2021-07-18,tsunoda,alphatauri,16,17,16,Finished,0,1591993,+53.567,1:32.270
+2021,10,British Grand Prix,2021-07-18,latifi,williams,18,17,17,Finished,0,1593588,+55.162,1:32.143
+2021,10,British Grand Prix,2021-07-18,mick_schumacher,haas,19,17,18,Finished,0,1606639,+1:08.213,1:32.567
+2021,10,British Grand Prix,2021-07-18,mazepin,haas,20,17,19,Finished,0,1616074,+1:17.648,1:33.462
+2021,10,British Grand Prix,2021-07-18,perez,red_bull,5,16,20,Vibrations,0,,,
+2021,14,Italian Grand Prix,2021-09-12,bottas,mercedes,1,18,1,Finished,3,1674078,27:54.078,1:23.540
+2021,14,Italian Grand Prix,2021-09-12,max_verstappen,red_bull,3,18,2,Finished,2,1676403,+2.325,1:23.502
+2021,14,Italian Grand Prix,2021-09-12,ricciardo,mclaren,5,18,3,Finished,1,1688612,+14.534,1:24.291
+2021,14,Italian Grand Prix,2021-09-12,norris,mclaren,4,18,4,Finished,0,1692913,+18.835,1:24.554
+2021,14,Italian Grand Prix,2021-09-12,hamilton,mercedes,2,18,5,Finished,0,1694089,+20.011,1:24.253
+2021,14,Italian Grand Prix,2021-09-12,leclerc,ferrari,8,18,6,Finished,0,1697520,+23.442,1:24.677
+2021,14,Italian Grand Prix,2021-09-12,sainz,ferrari,7,18,7,Finished,0,1702030,+27.952,1:24.918
+2021,14,Italian Grand Prix,2021-09-12,giovinazzi,alfa,10,18,8,Finished,0,1705167,+31.089,1:25.126
+2021,14,Italian Grand Prix,2021-09-12,perez,red_bull,9,18,9,Finished,0,1705758,+31.680,1:24.211
+2021,14,Italian Grand Prix,2021-09-12,stroll,aston_martin,12,18,10,Finished,0,1712749,+38.671,1:25.349
+2021,14,Italian Grand Prix,2021-09-12,alonso,alpine,13,18,11,Finished,0,1713873,+39.795,1:25.225
+2021,14,Italian Grand Prix,2021-09-12,vettel,aston_martin,11,18,12,Finished,0,1715255,+41.177,1:25.493
+2021,14,Italian Grand Prix,2021-09-12,ocon,alpine,14,18,13,Finished,0,1717451,+43.373,1:25.613
+2021,14,Italian Grand Prix,2021-09-12,latifi,williams,16,18,14,Finished,0,1720055,+45.977,1:25.711
+2021,14,Italian Grand Prix,2021-09-12,russell,williams,15,18,15,Finished,0,1720899,+46.821,1:25.835
+2021,14,Italian Grand Prix,2021-09-12,tsunoda,alphatauri,17,18,16,Finished,0,1724055,+49.977,1:25.847
+2021,14,Italian Grand Prix,2021-09-12,mazepin,haas,20,18,17,Finished,0,1736677,+1:02.599,1:26.613
+2021,14,Italian Grand Prix,2021-09-12,kubica,alfa,19,18,18,Finished,0,1739174,+1:05.096,1:26.772
+2021,14,Italian Grand Prix,2021-09-12,mick_schumacher,haas,18,18,19,Finished,0,1740232,+1:06.154,1:26.819
+2021,14,Italian Grand Prix,2021-09-12,gasly,alphatauri,6,0,20,Accident,0,,,
+2021,19,São Paulo Grand Prix,2021-11-14,bottas,mercedes,2,24,1,Finished,3,1749559,29:09.559,1:12.300
+2021,19,São Paulo Grand Prix,2021-11-14,max_verstappen,red_bull,1,24,2,Finished,2,1750729,+1.170,1:12.114
+2021,19,São Paulo Grand Prix,2021-11-14,sainz,ferrari,5,24,3,Finished,1,1768282,+18.723,1:13.167
+2021,19,São Paulo Grand Prix,2021-11-14,perez,red_bull,3,24,4,Finished,0,1769346,+19.787,1:13.110
+2021,19,São Paulo Grand Prix,2021-11-14,hamilton,mercedes,20,24,5,Finished,0,1770431,+20.872,1:12.357
+2021,19,São Paulo Grand Prix,2021-11-14,norris,mclaren,7,24,6,Finished,0,1772117,+22.558,1:12.994
+2021,19,São Paulo Grand Prix,2021-11-14,leclerc,ferrari,6,24,7,Finished,0,1774615,+25.056,1:13.140
+2021,19,São Paulo Grand Prix,2021-11-14,gasly,alphatauri,4,24,8,Finished,0,1783717,+34.158,1:13.342
+2021,19,São Paulo Grand Prix,2021-11-14,ocon,alpine,10,24,9,Finished,0,1784191,+34.632,1:13.615
+2021,19,São Paulo Grand Prix,2021-11-14,vettel,aston_martin,11,24,10,Finished,0,1784426,+34.867,1:13.558
+2021,19,São Paulo Grand Prix,2021-11-14,ricciardo,mclaren,8,24,11,Finished,0,1785428,+35.869,1:13.463
+2021,19,São Paulo Grand Prix,2021-11-14,alonso,alpine,9,24,12,Finished,0,1786137,+36.578,1:13.397
+2021,19,São Paulo Grand Prix,2021-11-14,giovinazzi,alfa,14,24,13,Finished,0,1791439,+41.880,1:13.627
+2021,19,São Paulo Grand Prix,2021-11-14,stroll,aston_martin,15,24,14,Finished,0,1793596,+44.037,1:13.666
+2021,19,São Paulo Grand Prix,2021-11-14,tsunoda,alphatauri,12,24,15,Finished,0,1795709,+46.150,1:13.747
+2021,19,São Paulo Grand Prix,2021-11-14,latifi,williams,16,24,16,Finished,0,1796319,+46.760,1:13.934
+2021,19,São Paulo Grand Prix,2021-11-14,russell,williams,17,24,17,Finished,0,1797298,+47.739,1:14.056
+2021,19,São Paulo Grand Prix,2021-11-14,raikkonen,alfa,13,24,18,Finished,0,1799573,+50.014,1:13.900
+2021,19,São Paulo Grand Prix,2021-11-14,mick_schumacher,haas,18,24,19,Finished,0,1811239,+1:01.680,1:14.387
+2021,19,São Paulo Grand Prix,2021-11-14,mazepin,haas,19,24,20,Finished,0,1817033,+1:07.474,1:14.583
+2022,4,Emilia Romagna Grand Prix,2022-04-24,max_verstappen,red_bull,1,21,1,Finished,8,1839567,30:39.567,1:19.154
+2022,4,Emilia Romagna Grand Prix,2022-04-24,leclerc,ferrari,2,21,2,Finished,7,1842542,+2.975,1:19.044
+2022,4,Emilia Romagna Grand Prix,2022-04-24,perez,red_bull,7,21,3,Finished,6,1844288,+4.721,1:19.012
+2022,4,Emilia Romagna Grand Prix,2022-04-24,sainz,ferrari,10,21,4,Finished,5,1857145,+17.578,1:19.251
+2022,4,Emilia Romagna Grand Prix,2022-04-24,norris,mclaren,3,21,5,Finished,4,1864128,+24.561,1:20.030
+2022,4,Emilia Romagna Grand Prix,2022-04-24,ricciardo,mclaren,6,21,6,Finished,3,1867307,+27.740,1:20.328
+2022,4,Emilia Romagna Grand Prix,2022-04-24,bottas,alfa,8,21,7,Finished,2,1867700,+28.133,1:20.219
+2022,4,Emilia Romagna Grand Prix,2022-04-24,kevin_magnussen,haas,4,21,8,Finished,1,1870279,+30.712,1:20.557
+2022,4,Emilia Romagna Grand Prix,2022-04-24,alonso,alpine,5,21,9,Finished,0,1871845,+32.278,1:20.639
+2022,4,Emilia Romagna Grand Prix,2022-04-24,mick_schumacher,haas,12,21,10,Finished,0,1873340,+33.773,1:20.567
+2022,4,Emilia Romagna Grand Prix,2022-04-24,russell,mercedes,11,21,11,Finished,0,1875851,+36.284,1:20.756
+2022,4,Emilia Romagna Grand Prix,2022-04-24,tsunoda,alphatauri,16,21,12,Finished,0,1877865,+38.298,1:20.909
+2022,4,Emilia Romagna Grand Prix,2022-04-24,vettel,aston_martin,9,21,13,Finished,0,1879744,+40.177,1:21.044
+2022,4,Emilia Romagna Grand Prix,2022-04-24,hamilton,mercedes,13,21,14,Finished,0,1881026,+41.459,1:20.663
+2022,4,Emilia Romagna Grand Prix,2022-04-24,stroll,aston_martin,15,21,15,Finished,0,1882477,+42.910,1:20.948
+2022,4,Emilia Romagna Grand Prix,2022-04-24,ocon,alpine,19,21,16,Finished,0,1883084,+43.517,1:20.995
+2022,4,Emilia Romagna Grand Prix,2022-04-24,gasly,alphatauri,17,21,17,Finished,0,1883361,+43.794,1:20.599
+2022,4,Emilia Romagna Grand Prix,2022-04-24,albon,williams,20,21,18,Finished,0,1888438,+48.871,1:21.020
+2022,4,Emilia Romagna Grand Prix,2022-04-24,latifi,williams,18,21,19,Finished,0,1891584,+52.017,1:21.437
+2022,4,Emilia Romagna Grand Prix,2022-04-24,zhou,alfa,0,0,20,Retired,0,,,
+2022,11,Austrian Grand Prix,2022-07-10,max_verstappen,red_bull,1,23,1,Finished,8,1590059,26:30.059,1:08.455
+2022,11,Austrian Grand Prix,2022-07-10,leclerc,ferrari,2,23,2,Finished,7,1591734,+1.675,1:08.321
+2022,11,Austrian Grand Prix,2022-07-10,sainz,ferrari,3,23,3,Finished,6,1595703,+5.644,1:08.409
+2022,11,Austrian Grand Prix,2022-07-10,russell,mercedes,4,23,4,Finished,5,1603488,+13.429,1:08.979
+2022,11,Austrian Grand Prix,2022-07-10,perez,red_bull,13,23,5,Finished,4,1608361,+18.302,1:09.137
+2022,11,Austrian Grand Prix,2022-07-10,ocon,alpine,5,23,6,Finished,3,1621091,+31.032,1:09.384
+2022,11,Austrian Grand Prix,2022-07-10,kevin_magnussen,haas,6,23,7,Finished,2,1624598,+34.539,1:09.232
+2022,11,Austrian Grand Prix,2022-07-10,hamilton,mercedes,9,23,8,Finished,1,1625506,+35.447,1:09.516
+2022,11,Austrian Grand Prix,2022-07-10,mick_schumacher,haas,7,23,9,Finished,0,1627222,+37.163,1:09.457
+2022,11,Austrian Grand Prix,2022-07-10,bottas,alfa,12,23,10,Finished,0,1627616,+37.557,1:09.674
+2022,11,Austrian Grand Prix,2022-07-10,norris,mclaren,15,23,11,Finished,0,1628639,+38.580,1:09.909
+2022,11,Austrian Grand Prix,2022-07-10,ricciardo,mclaren,16,23,12,Finished,0,1629797,+39.738,1:09.996
+2022,11,Austrian Grand Prix,2022-07-10,stroll,aston_martin,17,23,13,Finished,0,1638300,+48.241,1:10.295
+2022,11,Austrian Grand Prix,2022-07-10,zhou,alfa,18,23,14,Finished,0,1640812,+50.753,1:10.165
+2022,11,Austrian Grand Prix,2022-07-10,gasly,alphatauri,10,23,15,Finished,0,1642184,+52.125,1:10.409
+2022,11,Austrian Grand Prix,2022-07-10,albon,williams,11,23,16,Finished,0,1642471,+52.412,1:10.367
+2022,11,Austrian Grand Prix,2022-07-10,tsunoda,alphatauri,14,23,17,Finished,0,1644615,+54.556,1:10.267
+2022,11,Austrian Grand Prix,2022-07-10,latifi,williams,19,23,18,Finished,0,1658753,+1:08.694,1:10.284
+2022,11,Austrian Grand Prix,2022-07-10,vettel,aston_martin,20,21,19,Collision damage,0,,,
+2022,11,Austrian Grand Prix,2022-07-10,alonso,alpine,8,0,20,Electrical,0,,,
+2022,21,São Paulo Grand Prix,2022-11-13,russell,mercedes,3,24,1,Finished,8,1811307,30:11.307,1:14.233
+2022,21,São Paulo Grand Prix,2022-11-13,sainz,ferrari,5,24,2,Finished,7,1815302,+3.995,1:14.522
+2022,21,São Paulo Grand Prix,2022-11-13,hamilton,mercedes,8,24,3,Finished,6,1815799,+4.492,1:14.317
+2022,21,São Paulo Grand Prix,2022-11-13,max_verstappen,red_bull,2,24,4,Finished,5,1821801,+10.494,1:14.507
+2022,21,São Paulo Grand Prix,2022-11-13,perez,red_bull,9,24,5,Finished,4,1823162,+11.855,1:14.699
+2022,21,São Paulo Grand Prix,2022-11-13,leclerc,ferrari,10,24,6,Finished,3,1824440,+13.133,1:15.236
+2022,21,São Paulo Grand Prix,2022-11-13,norris,mclaren,4,24,7,Finished,2,1836931,+25.624,1:15.380
+2022,21,São Paulo Grand Prix,2022-11-13,kevin_magnussen,haas,1,24,8,Finished,1,1840075,+28.768,1:15.110
+2022,21,São Paulo Grand Prix,2022-11-13,vettel,aston_martin,13,24,9,Finished,0,1841525,+30.218,1:15.451
+2022,21,São Paulo Grand Prix,2022-11-13,gasly,alphatauri,12,24,10,Finished,0,1845477,+34.170,1:15.290
+2022,21,São Paulo Grand Prix,2022-11-13,ricciardo,mclaren,14,24,11,Finished,0,1850702,+39.395,1:15.385
+2022,21,São Paulo Grand Prix,2022-11-13,mick_schumacher,haas,20,24,12,Finished,0,1852466,+41.159,1:15.771
+2022,21,São Paulo Grand Prix,2022-11-13,zhou,alfa,17,24,13,Finished,0,1853070,+41.763,1:15.765
+2022,21,São Paulo Grand Prix,2022-11-13,bottas,alfa,18,24,14,Finished,0,1853645,+42.338,1:15.980
+2022,21,São Paulo Grand Prix,2022-11-13,tsunoda,alphatauri,19,24,15,Finished,0,1861613,+50.306,1:16.413
+2022,21,São Paulo Grand Prix,2022-11-13,stroll,aston_martin,15,24,16,Finished,0,1862007,+50.700,1:15.425
+2022,21,São Paulo Grand Prix,2022-11-13,ocon,alpine,6,24,17,Finished,0,1863063,+51.756,1:16.097
+2022,21,São Paulo Grand Prix,2022-11-13,alonso,alpine,7,24,18,Finished,0,1865292,+53.985,1:14.764
+2022,21,São Paulo Grand Prix,2022-11-13,latifi,williams,16,24,19,Finished,0,1888157,+1:16.850,1:16.525
+2022,21,São Paulo Grand Prix,2022-11-13,albon,williams,11,12,20,Retired,0,,,
+2023,4,Azerbaijan Grand Prix,2023-04-30,perez,red_bull,2,17,1,Finished,8,1997667,33:17.667,1:43.616
+2023,4,Azerbaijan Grand Prix,2023-04-30,leclerc,ferrari,1,17,2,Finished,7,2002130,+4.463,1:43.646
+2023,4,Azerbaijan Grand Prix,2023-04-30,max_verstappen,red_bull,3,17,3,Finished,6,2002732,+5.065,1:43.723
+2023,4,Azerbaijan Grand Prix,2023-04-30,russell,mercedes,4,17,4,Finished,5,2001134,+3.467,1:44.409
+2023,4,Azerbaijan Grand Prix,2023-04-30,sainz,ferrari,5,17,5,Finished,4,2008055,+10.388,1:44.398
+2023,4,Azerbaijan Grand Prix,2023-04-30,alonso,aston_martin,8,17,6,Finished,3,2009280,+11.613,1:44.544
+2023,4,Azerbaijan Grand Prix,2023-04-30,hamilton,mercedes,6,17,7,Finished,2,2002557,+4.890,1:44.601
+2023,4,Azerbaijan Grand Prix,2023-04-30,stroll,aston_martin,9,17,8,Finished,1,2016084,+18.417,1:44.855
+2023,4,Azerbaijan Grand Prix,2023-04-30,albon,williams,7,17,9,Finished,0,2019424,+21.757,1:44.915
+2023,4,Azerbaijan Grand Prix,2023-04-30,piastri,mclaren,11,17,10,Finished,0,2020518,+22.851,1:44.776
+2023,4,Azerbaijan Grand Prix,2023-04-30,kevin_magnussen,haas,13,17,11,Finished,0,2025657,+27.990,1:45.349
+2023,4,Azerbaijan Grand Prix,2023-04-30,zhou,alfa,14,17,12,Finished,0,2032269,+34.602,1:45.766
+2023,4,Azerbaijan Grand Prix,2023-04-30,gasly,alpine,17,17,13,Finished,0,2034585,+36.918,1:45.883
+2023,4,Azerbaijan Grand Prix,2023-04-30,de_vries,alphatauri,18,17,14,Finished,0,2039293,+41.626,1:45.768
+2023,4,Azerbaijan Grand Prix,2023-04-30,hulkenberg,haas,12,17,15,Finished,0,2046254,+48.587,1:45.971
+2023,4,Azerbaijan Grand Prix,2023-04-30,bottas,alfa,15,17,16,Finished,0,2047584,+49.917,1:46.277
+2023,4,Azerbaijan Grand Prix,2023-04-30,norris,mclaren,10,17,17,Finished,0,2048771,+51.104,1:44.484
+2023,4,Azerbaijan Grand Prix,2023-04-30,ocon,alpine,0,17,18,Finished,0,2058288,+1:00.621,1:45.090
+2023,4,Azerbaijan Grand Prix,2023-04-30,tsunoda,alphatauri,16,2,19,Collision damage,0,,,
+2023,4,Azerbaijan Grand Prix,2023-04-30,sargeant,williams,0,0,20,Accident,0,,,
+2023,9,Austrian Grand Prix,2023-07-02,max_verstappen,red_bull,1,24,1,Finished,8,1826730,30:26.730,1:14.292
+2023,9,Austrian Grand Prix,2023-07-02,perez,red_bull,2,24,2,Finished,7,1847778,+21.048,1:15.492
+2023,9,Austrian Grand Prix,2023-07-02,sainz,ferrari,5,24,3,Finished,6,1849818,+23.088,1:15.457
+2023,9,Austrian Grand Prix,2023-07-02,stroll,aston_martin,7,24,4,Finished,5,1856433,+29.703,1:15.531
+2023,9,Austrian Grand Prix,2023-07-02,alonso,aston_martin,6,24,5,Finished,4,1856839,+30.109,1:14.978
+2023,9,Austrian Grand Prix,2023-07-02,hulkenberg,haas,4,24,6,Finished,3,1858027,+31.297,1:10.180
+2023,9,Austrian Grand Prix,2023-07-02,ocon,alpine,8,24,7,Finished,2,1863332,+36.602,1:15.512
+2023,9,Austrian Grand Prix,2023-07-02,russell,mercedes,15,24,8,Finished,1,1863341,+36.611,1:10.385
+2023,9,Austrian Grand Prix,2023-07-02,norris,mclaren,3,24,9,Finished,0,1865338,+38.608,1:15.627
+2023,9,Austrian Grand Prix,2023-07-02,hamilton,mercedes,18,24,10,Finished,0,1873105,+46.375,1:10.775
+2023,9,Austrian Grand Prix,2023-07-02,piastri,mclaren,17,24,11,Finished,0,1876537,+49.807,1:10.274
+2023,9,Austrian Grand Prix,2023-07-02,leclerc,ferrari,9,24,12,Finished,0,1877519,+50.789,1:10.686
+2023,9,Austrian Grand Prix,2023-07-02,albon,williams,11,24,13,Finished,0,1879578,+52.848,1:11.635
+2023,9,Austrian Grand Prix,2023-07-02,kevin_magnussen,haas,10,24,14,Finished,0,1883323,+56.593,1:10.539
+2023,9,Austrian Grand Prix,2023-07-02,gasly,alpine,12,24,15,Finished,0,1884382,+57.652,1:16.109
+2023,9,Austrian Grand Prix,2023-07-02,tsunoda,alphatauri,13,24,16,Finished,0,1891552,+1:04.822,1:11.363
+2023,9,Austrian Grand Prix,2023-07-02,de_vries,alphatauri,14,24,17,Finished,0,1892347,+1:05.617,1:11.701
+2023,9,Austrian Grand Prix,2023-07-02,sargeant,williams,20,24,18,Finished,0,1892789,+1:06.059,1:11.829
+2023,9,Austrian Grand Prix,2023-07-02,zhou,alfa,16,24,19,Finished,0,1897555,+1:10.825,1:11.305
+2023,9,Austrian Grand Prix,2023-07-02,bottas,alfa,0,24,20,Finished,0,1903165,+1:16.435,1:16.758
+2023,12,Belgian Grand Prix,2023-07-30,max_verstappen,red_bull,1,11,1,Finished,8,1498433,24:58.433,1:58.943
+2023,12,Belgian Grand Prix,2023-07-30,piastri,mclaren,2,11,2,Finished,7,1505110,+6.677,2:00.360
+2023,12,Belgian Grand Prix,2023-07-30,gasly,alpine,6,11,3,Finished,6,1509166,+10.733,2:01.857
+2023,12,Belgian Grand Prix,2023-07-30,sainz,ferrari,3,11,4,Finished,5,1511081,+12.648,2:01.472
+2023,12,Belgian Grand Prix,2023-07-30,leclerc,ferrari,4,11,5,Finished,4,1513449,+15.016,2:02.635
+2023,12,Belgian Grand Prix,2023-07-30,norris,mclaren,5,11,6,Finished,3,1514485,+16.052,2:02.085
+2023,12,Belgian Grand Prix,2023-07-30,hamilton,mercedes,7,11,7,Finished,2,1515190,+16.757,2:00.920
+2023,12,Belgian Grand Prix,2023-07-30,russell,mercedes,10,11,8,Finished,1,1515255,+16.822,2:01.935
+2023,12,Belgian Grand Prix,2023-07-30,ocon,alpine,9,11,9,Finished,0,1520843,+22.410,2:03.061
+2023,12,Belgian Grand Prix,2023-07-30,ricciardo,alphatauri,11,11,10,Finished,0,1521239,+22.806,2:02.967
+2023,12,Belgian Grand Prix,2023-07-30,stroll,aston_martin,14,11,11,Finished,0,1523440,+25.007,2:03.356
+2023,12,Belgian Grand Prix,2023-07-30,albon,williams,12,11,12,Finished,0,1524736,+26.303,2:03.674
+2023,12,Belgian Grand Prix,2023-07-30,bottas,alfa,17,11,13,Finished,0,1525439,+27.006,2:03.595
+2023,12,Belgian Grand Prix,2023-07-30,kevin_magnussen,haas,18,11,14,Finished,0,1531419,+32.986,2:03.965
+2023,12,Belgian Grand Prix,2023-07-30,zhou,alfa,19,11,15,Finished,0,1534775,+36.342,2:04.760
+2023,12,Belgian Grand Prix,2023-07-30,sargeant,williams,13,11,16,Finished,0,1536004,+37.571,2:03.482
+2023,12,Belgian Grand Prix,2023-07-30,hulkenberg,haas,20,11,17,Finished,0,1536260,+37.827,2:03.472
+2023,12,Belgian Grand Prix,2023-07-30,tsunoda,alphatauri,16,11,18,Finished,0,1537700,+39.267,2:02.080
+2023,12,Belgian Grand Prix,2023-07-30,perez,red_bull,8,8,19,Collision damage,0,,,
+2023,12,Belgian Grand Prix,2023-07-30,alonso,aston_martin,15,2,20,Accident,0,,,
+2023,17,Qatar Grand Prix,2023-10-08,piastri,mclaren,1,19,1,Finished,8,2101297,35:01.297,1:25.926
+2023,17,Qatar Grand Prix,2023-10-08,max_verstappen,red_bull,3,19,2,Finished,7,2103168,+1.871,1:25.604
+2023,17,Qatar Grand Prix,2023-10-08,norris,mclaren,2,19,3,Finished,6,2109794,+8.497,1:25.662
+2023,17,Qatar Grand Prix,2023-10-08,russell,mercedes,4,19,4,Finished,5,2112333,+11.036,1:27.220
+2023,17,Qatar Grand Prix,2023-10-08,hamilton,mercedes,12,19,5,Finished,4,2118611,+17.314,1:27.968
+2023,17,Qatar Grand Prix,2023-10-08,sainz,ferrari,5,19,6,Finished,3,2120103,+18.806,1:28.644
+2023,17,Qatar Grand Prix,2023-10-08,albon,williams,17,19,7,Finished,2,2121161,+19.864,1:28.717
+2023,17,Qatar Grand Prix,2023-10-08,alonso,aston_martin,9,19,8,Finished,1,2122477,+21.180,1:28.717
+2023,17,Qatar Grand Prix,2023-10-08,gasly,alpine,11,19,9,Finished,0,2123039,+21.742,1:28.769
+2023,17,Qatar Grand Prix,2023-10-08,bottas,alfa,13,19,10,Finished,0,2123505,+22.208,1:29.017
+2023,17,Qatar Grand Prix,2023-10-08,tsunoda,alphatauri,18,19,11,Finished,0,2124160,+22.863,1:29.381
+2023,17,Qatar Grand Prix,2023-10-08,leclerc,ferrari,6,19,12,Finished,0,2126157,+24.860,1:28.759
+2023,17,Qatar Grand Prix,2023-10-08,stroll,aston_martin,16,19,13,Finished,0,2125820,+24.523,1:29.536
+2023,17,Qatar Grand Prix,2023-10-08,kevin_magnussen,haas,19,19,14,Finished,0,2126267,+24.970,1:29.560
+2023,17,Qatar Grand Prix,2023-10-08,zhou,alfa,15,19,15,Finished,0,2128165,+26.868,1:29.553
+2023,17,Qatar Grand Prix,2023-10-08,hulkenberg,haas,7,11,16,Retired,0,,,
+2023,17,Qatar Grand Prix,2023-10-08,ocon,alpine,10,10,17,Retired,0,,,
+2023,17,Qatar Grand Prix,2023-10-08,perez,red_bull,8,10,18,Retired,0,,,
+2023,17,Qatar Grand Prix,2023-10-08,sargeant,williams,20,2,19,Retired,0,,,
+2023,17,Qatar Grand Prix,2023-10-08,lawson,alphatauri,14,0,20,Retired,0,,,
+2023,18,United States Grand Prix,2023-10-22,max_verstappen,red_bull,1,19,1,Finished,8,1890849,31:30.849,1:39.060
+2023,18,United States Grand Prix,2023-10-22,hamilton,mercedes,3,19,2,Finished,7,1900314,+9.465,1:39.138
+2023,18,United States Grand Prix,2023-10-22,leclerc,ferrari,2,19,3,Finished,6,1908836,+17.987,1:39.634
+2023,18,United States Grand Prix,2023-10-22,norris,mclaren,4,19,4,Finished,5,1909712,+18.863,1:39.795
+2023,18,United States Grand Prix,2023-10-22,perez,red_bull,7,19,5,Finished,4,1913777,+22.928,1:39.824
+2023,18,United States Grand Prix,2023-10-22,sainz,ferrari,6,19,6,Finished,3,1919156,+28.307,1:40.223
+2023,18,United States Grand Prix,2023-10-22,gasly,alpine,9,19,7,Finished,2,1923252,+32.403,1:40.155
+2023,18,United States Grand Prix,2023-10-22,russell,mercedes,11,19,8,Finished,1,1925099,+34.250,1:40.253
+2023,18,United States Grand Prix,2023-10-22,albon,williams,8,19,9,Finished,0,1925416,+34.567,1:40.094
+2023,18,United States Grand Prix,2023-10-22,piastri,mclaren,5,19,10,Finished,0,1933252,+42.403,1:41.037
+2023,18,United States Grand Prix,2023-10-22,ocon,alpine,13,19,11,Finished,0,1935835,+44.986,1:41.013
+2023,18,United States Grand Prix,2023-10-22,ricciardo,alphatauri,10,19,12,Finished,0,1936358,+45.509,1:40.434
+2023,18,United States Grand Prix,2023-10-22,alonso,aston_martin,12,19,13,Finished,0,1939935,+49.086,1:40.805
+2023,18,United States Grand Prix,2023-10-22,tsunoda,alphatauri,19,19,14,Finished,0,1940582,+49.733,1:40.632
+2023,18,United States Grand Prix,2023-10-22,hulkenberg,haas,16,19,15,Finished,0,1947499,+56.650,1:41.232
+2023,18,United States Grand Prix,2023-10-22,bottas,alfa,18,19,16,Finished,0,1955250,+1:04.401,1:41.503
+2023,18,United States Grand Prix,2023-10-22,zhou,alfa,15,19,17,Finished,0,1958821,+1:07.972,1:41.595
+2023,18,United States Grand Prix,2023-10-22,kevin_magnussen,haas,17,19,18,Finished,0,1961971,+1:11.122,1:41.699
+2023,18,United States Grand Prix,2023-10-22,sargeant,williams,20,19,19,Finished,0,1962298,+1:11.449,1:41.947
+2023,18,United States Grand Prix,2023-10-22,stroll,aston_martin,14,16,20,Brakes,0,,,
+2023,20,São Paulo Grand Prix,2023-11-05,max_verstappen,red_bull,2,24,1,Finished,8,1807209,30:07.209,1:14.540
+2023,20,São Paulo Grand Prix,2023-11-05,norris,mclaren,1,24,2,Finished,7,1811496,+4.287,1:14.647
+2023,20,São Paulo Grand Prix,2023-11-05,perez,red_bull,3,24,3,Finished,6,1820826,+13.617,1:15.008
+2023,20,São Paulo Grand Prix,2023-11-05,russell,mercedes,4,24,4,Finished,5,1833088,+25.879,1:14.422
+2023,20,São Paulo Grand Prix,2023-11-05,leclerc,ferrari,7,24,5,Finished,4,1835769,+28.560,1:15.411
+2023,20,São Paulo Grand Prix,2023-11-05,tsunoda,alphatauri,6,24,6,Finished,3,1836419,+29.210,1:15.532
+2023,20,São Paulo Grand Prix,2023-11-05,hamilton,mercedes,5,24,7,Finished,2,1841935,+34.726,1:15.276
+2023,20,São Paulo Grand Prix,2023-11-05,sainz,ferrari,9,24,8,Finished,1,1842315,+35.106,1:15.362
+2023,20,São Paulo Grand Prix,2023-11-05,ricciardo,alphatauri,8,24,9,Finished,0,1842512,+35.303,1:15.460
+2023,20,São Paulo Grand Prix,2023-11-05,piastri,mclaren,10,24,10,Finished,0,1845428,+38.219,1:15.463
+2023,20,São Paulo Grand Prix,2023-11-05,alonso,aston_martin,15,24,11,Finished,0,1846270,+39.061,1:15.477
+2023,20,São Paulo Grand Prix,2023-11-05,stroll,aston_martin,17,24,12,Finished,0,1846687,+39.478,1:15.467
+2023,20,São Paulo Grand Prix,2023-11-05,gasly,alpine,13,24,13,Finished,0,1847830,+40.621,1:15.209
+2023,20,São Paulo Grand Prix,2023-11-05,ocon,alpine,16,24,14,Finished,0,1850057,+42.848,1:15.536
+2023,20,São Paulo Grand Prix,2023-11-05,albon,williams,19,24,15,Finished,0,1850603,+43.394,1:15.598
+2023,20,São Paulo Grand Prix,2023-11-05,kevin_magnussen,haas,11,24,16,Finished,0,1863716,+56.507,1:15.464
+2023,20,São Paulo Grand Prix,2023-11-05,zhou,alfa,18,24,17,Finished,0,1865932,+58.723,1:15.837
+2023,20,São Paulo Grand Prix,2023-11-05,hulkenberg,haas,12,24,18,Finished,0,1867539,+1:00.330,1:15.472
+2023,20,São Paulo Grand Prix,2023-11-05,bottas,alfa,14,24,19,Finished,0,1867958,+1:00.749,1:15.738
+2023,20,São Paulo Grand Prix,2023-11-05,sargeant,williams,20,24,20,Finished,0,1868154,+1:00.945,1:15.496
+2024,5,Chinese Grand Prix,2024-04-21,max_verstappen,red_bull,4,19,1,Finished,8,1924660,32:04.660,1:40.331
+2024,5,Chinese Grand Prix,2024-04-21,hamilton,mercedes,2,19,2,Finished,7,1937703,+13.043,1:40.420
+2024,5,Chinese Grand Prix,2024-04-21,perez,red_bull,6,19,3,Finished,6,1939918,+15.258,1:41.065
+2024,5,Chinese Grand Prix,2024-04-21,leclerc,ferrari,7,19,4,Finished,5,1942146,+17.486,1:41.003
+2024,5,Chinese Grand Prix,2024-04-21,sainz,ferrari,5,19,5,Finished,4,1945356,+20.696,1:40.962
+2024,5,Chinese Grand Prix,2024-04-21,norris,mclaren,1,19,6,Finished,3,1946748,+22.088,1:40.951
+2024,5,Chinese Grand Prix,2024-04-21,piastri,mclaren,8,19,7,Finished,2,1949373,+24.713,1:41.107
+2024,5,Chinese Grand Prix,2024-04-21,russell,mercedes,11,19,8,Finished,1,1950356,+25.696,1:41.505
+2024,5,Chinese Grand Prix,2024-04-21,zhou,sauber,10,19,9,Finished,0,1956611,+31.951,1:41.502
+2024,5,Chinese Grand Prix,2024-04-21,kevin_magnussen,haas,12,19,10,Finished,0,1962058,+37.398,1:42.092
+2024,5,Chinese Grand Prix,2024-04-21,ricciardo,rb,14,19,11,Finished,0,1962500,+37.840,1:42.234
+2024,5,Chinese Grand Prix,2024-04-21,bottas,sauber,9,19,12,Finished,0,1962955,+38.295,1:42.140
+2024,5,Chinese Grand Prix,2024-04-21,ocon,alpine,17,19,13,Finished,0,1964501,+39.841,1:42.191
+2024,5,Chinese Grand Prix,2024-04-21,stroll,aston_martin,15,19,14,Finished,0,1964959,+40.299,1:42.258
+2024,5,Chinese Grand Prix,2024-04-21,gasly,alpine,16,19,15,Finished,0,1965498,+40.838,1:42.017
+2024,5,Chinese Grand Prix,2024-04-21,tsunoda,rb,19,19,16,Finished,0,1966530,+41.870,1:42.056
+2024,5,Chinese Grand Prix,2024-04-21,albon,williams,18,19,17,Finished,0,1967658,+42.998,1:42.389
+2024,5,Chinese Grand Prix,2024-04-21,sargeant,williams,20,19,18,Finished,0,1971012,+46.352,1:42.516
+2024,5,Chinese Grand Prix,2024-04-21,hulkenberg,haas,13,19,19,Finished,0,1974290,+49.630,1:42.315
+2024,5,Chinese Grand Prix,2024-04-21,alonso,aston_martin,3,17,20,Retired,0,,,
+2024,6,Miami Grand Prix,2024-05-05,max_verstappen,red_bull,1,19,1,Finished,8,1891383,31:31.383,1:30.415
+2024,6,Miami Grand Prix,2024-05-05,leclerc,ferrari,2,19,2,Finished,7,1894754,+3.371,1:30.807
+2024,6,Miami Grand Prix,2024-05-05,perez,red_bull,3,19,3,Finished,6,1896478,+5.095,1:30.921
+2024,6,Miami Grand Prix,2024-05-05,ricciardo,rb,4,19,4,Finished,5,1906354,+14.971,1:31.505
+2024,6,Miami Grand Prix,2024-05-05,sainz,ferrari,5,19,5,Finished,4,1906605,+15.222,1:31.568
+2024,6,Miami Grand Prix,2024-05-05,piastri,mclaren,6,19,6,Finished,3,1907133,+15.750,1:31.393
+2024,6,Miami Grand Prix,2024-05-05,hulkenberg,haas,10,19,7,Finished,2,1913437,+22.054,1:31.963
+2024,6,Miami Grand Prix,2024-05-05,tsunoda,rb,15,19,8,Finished,1,1921199,+29.816,1:31.844
+2024,6,Miami Grand Prix,2024-05-05,gasly,alpine,16,19,9,Finished,0,1923263,+31.880,1:32.148
+2024,6,Miami Grand Prix,2024-05-05,sargeant,williams,18,19,10,Finished,0,1925738,+34.355,1:32.192
+2024,6,Miami Grand Prix,2024-05-05,zhou,sauber,17,19,11,Finished,0,1926461,+35.078,1:32.131
+2024,6,Miami Grand Prix,2024-05-05,russell,mercedes,11,19,12,Finished,0,1927138,+35.755,1:32.173
+2024,6,Miami Grand Prix,2024-05-05,albon,williams,20,19,13,Finished,0,1927469,+36.086,1:32.223
+2024,6,Miami Grand Prix,2024-05-05,bottas,sauber,19,19,14,Finished,0,1928275,+36.892,1:32.462
+2024,6,Miami Grand Prix,2024-05-05,ocon,alpine,13,19,15,Finished,0,1929123,+37.740,1:32.218
+2024,6,Miami Grand Prix,2024-05-05,hamilton,mercedes,12,19,16,Finished,0,1940730,+49.347,1:31.830
+2024,6,Miami Grand Prix,2024-05-05,alonso,aston_martin,8,19,17,Finished,0,1950792,+59.409,1:32.355
+2024,6,Miami Grand Prix,2024-05-05,kevin_magnussen,haas,14,19,18,Finished,0,1957686,+1:06.303,1:32.113
+2024,6,Miami Grand Prix,2024-05-05,stroll,aston_martin,7,1,19,Retired,0,,,
+2024,6,Miami Grand Prix,2024-05-05,norris,mclaren,9,0,20,Retired,0,,,
+2024,11,Austrian Grand Prix,2024-06-30,max_verstappen,red_bull,1,23,1,Finished,8,1601389,26:41.389,1:09.013
+2024,11,Austrian Grand Prix,2024-06-30,piastri,mclaren,3,23,2,Finished,7,1606005,+4.616,1:08.980
+2024,11,Austrian Grand Prix,2024-06-30,norris,mclaren,2,23,3,Finished,6,1606737,+5.348,1:08.935
+2024,11,Austrian Grand Prix,2024-06-30,russell,mercedes,4,23,4,Finished,5,1609743,+8.354,1:09.194
+2024,11,Austrian Grand Prix,2024-06-30,sainz,ferrari,5,23,5,Finished,4,1611378,+9.989,1:09.121
+2024,11,Austrian Grand Prix,2024-06-30,hamilton,mercedes,6,23,6,Finished,3,1612596,+11.207,1:09.265
+2024,11,Austrian Grand Prix,2024-06-30,leclerc,ferrari,10,23,7,Finished,2,1614813,+13.424,1:09.352
+2024,11,Austrian Grand Prix,2024-06-30,perez,red_bull,7,23,8,Finished,1,1618798,+17.409,1:09.420
+2024,11,Austrian Grand Prix,2024-06-30,kevin_magnussen,haas,11,23,9,Finished,0,1625456,+24.067,1:09.942
+2024,11,Austrian Grand Prix,2024-06-30,stroll,aston_martin,12,23,10,Finished,0,1631564,+30.175,1:10.260
+2024,11,Austrian Grand Prix,2024-06-30,ocon,alpine,8,23,11,Finished,0,1632228,+30.839,1:10.254
+2024,11,Austrian Grand Prix,2024-06-30,gasly,alpine,9,23,12,Finished,0,1632697,+31.308,1:10.168
+2024,11,Austrian Grand Prix,2024-06-30,tsunoda,rb,14,23,13,Finished,0,1636841,+35.452,1:10.363
+2024,11,Austrian Grand Prix,2024-06-30,ricciardo,rb,16,23,14,Finished,0,1640786,+39.397,1:10.480
+2024,11,Austrian Grand Prix,2024-06-30,alonso,aston_martin,13,23,15,Finished,0,1644544,+43.155,1:10.393
+2024,11,Austrian Grand Prix,2024-06-30,sargeant,williams,15,23,16,Finished,0,1645465,+44.076,1:10.488
+2024,11,Austrian Grand Prix,2024-06-30,albon,williams,0,23,17,Finished,0,1646062,+44.673,1:10.562
+2024,11,Austrian Grand Prix,2024-06-30,bottas,sauber,18,23,18,Finished,0,1647900,+46.511,1:10.590
+2024,11,Austrian Grand Prix,2024-06-30,hulkenberg,haas,17,23,19,Finished,0,1649812,+48.423,1:10.512
+2024,11,Austrian Grand Prix,2024-06-30,zhou,sauber,19,23,20,Finished,0,1654532,+53.143,1:10.613
