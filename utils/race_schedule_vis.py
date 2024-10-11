@@ -1,8 +1,10 @@
 import plotly.express as px
 import pandas as pd
+import os
 
 def load_race_schedule_data():
-    return pd.read_csv('race_schedule.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '..', 'Datasets', 'race_schedule.csv')
+    return pd.read_csv(file_path)
 
 def f1_circuit_world_map(year):
     df_race_schedule = load_race_schedule_data()
