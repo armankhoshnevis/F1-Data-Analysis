@@ -14,6 +14,9 @@ from utils.constructor_standing_vis import (
     plot_constructor_ranking_vs_year,
     plot_constructor_wins_vs_year,
     plot_constructor_points_vs_year,
+    plot_constructor_points_distribution_per_year,
+    plot_overall_win_percentage,
+    plot_yearly_win_percentage
     )
 
 st.set_page_config(
@@ -167,4 +170,29 @@ elif eda_section == "Constructor Standing":
                     from its rebranding of Renault in 2020-2021. Additionally, Alfa Romeo’s transition to Sauber
                     in 2023 further reshapes the grid's landscape, highlighting the evolving dynamics within the
                     constructor standings.
+                    """)
+
+    elif constructor_vis_option == "Dominance":
+        st.write("### Points Distribution per Year")
+        fig_points_dist = plot_constructor_points_distribution_per_year()
+        st.plotly_chart(fig_points_dist, use_container_width=True)
+
+        st.write("### Overall Win Percentage per Constructor")
+        fig_overall_win_percentage = plot_overall_win_percentage()
+        st.plotly_chart(fig_overall_win_percentage, use_container_width=True)
+
+        st.write("### Year-by-Year Win Percentage per Constructor")
+        fig_yearly_win_percentage = plot_yearly_win_percentage()
+        st.plotly_chart(fig_yearly_win_percentage, use_container_width=True)
+        
+        st.markdown("""
+                    The points distribution visualization provides a higher-level look into constructor dominance
+                    each season. Notably, 2021 and 2023 show a wide range of high points, reflecting dominant
+                    performances. In contrast, the 2024 season displays a much narrower distribution, indicating
+                    a more competitive field.
+                    
+                    The overall and yearly win percentage charts further emphasize the shifts in constructor
+                    dominance, highlighting how leading teams' win shares have evolved. Together, these
+                    visualizations underscore the competitive dynamics and changes in the F1 landscape over recent
+                    years.
                     """)
