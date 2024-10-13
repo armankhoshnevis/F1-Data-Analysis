@@ -10,6 +10,12 @@ from utils.race_schedule_vis import (
     races_by_country
     )
 
+from utils.constructor_standing_vis.py import(
+    plot_constructor_ranking_vs_year,
+    plot_constructor_wins_vs_year,
+    plot_constructor_points_vs_year
+)
+
 st.set_page_config(
     page_title="FDS Project - F1",
     # page_icon="f1logo.png",
@@ -113,4 +119,52 @@ elif eda_section == "Race Circuits":
                     Austria, which have consistently retained their places in the F1 schedule. Additionally, this
                     chart reveals countries that were once hosts but have since departed from the calendar,
                     underscoring F1's dynamic global footprint.
+                    """)
+
+elif eda_section == "Constructor Standing":
+    st.subheader("Constructor Standing Visualizations")
+    
+    constructor_vis_option = st.sidebar.selectbox(
+        "Select Visualization",
+        ["Yearly Trends", "Dominance"]
+    )
+    
+    if constructor_vis_option == "Yearly Trends":
+        start_year, end_year = st.sidebar.select_slider(
+            "Select Year Range",
+            options=list(range(2017, 2025)),
+            value=(2017, 2024)
+        )
+        
+        show_ranking = st.sidebar.checkbox("Show Ranking vs Year", value=True)
+        show_wins = st.sidebar.checkbox("Show Wins vs Year", value=True)
+        show_points = st.sidebar.checkbox("Show Points vs Year", value=True)
+
+        if show_ranking:
+            st.write("### Ranking vs Year")
+            fig_ranking = plot_constructor_ranking_vs_year(start_year=start_year, end_year=end_year)
+            st.plotly_chart(fig_ranking, use_container_width=True)
+
+        if show_wins:
+            st.write("### Wins vs Year")
+            fig_wins = plot_constructor_wins_vs_year(start_year=start_year, end_year=end_year)
+            st.plotly_chart(fig_wins, use_container_width=True)
+
+        if show_points:
+            st.write("### Points vs Year")
+            fig_points = plot_constructor_points_vs_year(start_year=start_year, end_year=end_year)
+            st.plotly_chart(fig_points, use_container_width=True)
+        
+        st.markdown("""
+                    These visualizations track constructor performance trends in rankings, wins, and points across
+                    recent seasons. Mercedes' dominance is evident from 2017 to 2021, followed by the rise of
+                    Red Bull, starting in 2021 and solidifying through 2023. By 2024, a closer championship battle
+                    emerges between Red Bull, McLaren, Ferrari, and Mercedes, reflecting the impact of the 2022
+                    regulation changes aimed at enhancing competition.
+
+                    In the mid-to-lower rankings, Aston Martin has solidified a middle-ground position, with Haas
+                    showing marked improvement. In contrast, Alpine has experienced a notable decline, continuing
+                    from its rebranding of Renault in 2020-2021. Additionally, Alfa Romeo’s transition to Sauber
+                    in 2023 further reshapes the grid's landscape, highlighting the evolving dynamics within the
+                    constructor standings.
                     """)
