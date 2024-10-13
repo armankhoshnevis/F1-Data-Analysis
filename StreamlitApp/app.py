@@ -10,7 +10,7 @@ from utils.race_schedule_vis import (
     races_by_country
     )
 
-from utils.constructor_standing_vis.py import(
+from utils.constructor_standing_vis import (
     plot_constructor_ranking_vs_year,
     plot_constructor_wins_vs_year,
     plot_constructor_points_vs_year
