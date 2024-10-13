@@ -4,7 +4,8 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.race_schedule_vis import (
-    f1_circuit_world_map, 
+    f1_circuit_world_map,
+    races_by_continent
     )
 
 st.set_page_config(
@@ -70,5 +71,18 @@ elif eda_section == "Race Circuits":
                     The map emphasizes the diverse environmental conditions, that teams must adapt to for optimal
                     performance. These variations influence car setup and driver preparation, 
                     underscoring the logistical challenges teams face in navigating the season's unique demands.
+                    """
+        )
+    
+    elif visualization == "Races by Continent":
+        fig = races_by_continent()
+        st.plotly_chart(fig, use_container_width=True)
+        st.markdown("""
+                    This visualization illustrates the distribution of Formula 1 races by continent over the past
+                    several seasons. Europe holds the largest share of the calendar each year, emphasizing its
+                    historical and ongoing importance in F1. Asia and the Middle East follow closely, reflecting 
+                    the sport's expansion into new regions. North and South America account for fewer races,
+                    yet play a critical role in rounding out the global F1 season. Each continent’s race count is
+                    shown in terms of absolute numbers and percentages, highlighting their relative contributions.
                     """
         )
