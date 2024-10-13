@@ -19,6 +19,13 @@ from utils.constructor_standing_vis import (
     plot_yearly_win_percentage
     )
 
+from utils.driver_standing_vis import (
+    load_driver_standings_data, 
+    plot_driver_progression, 
+    plot_top_drivers_by_points, 
+    plot_top_drivers_by_wins
+    )
+
 st.set_page_config(
     page_title="FDS Project - F1",
     page_icon="f1logo.png",
@@ -195,4 +202,62 @@ elif eda_section == "Constructor Standing":
                     dominance, highlighting how leading teams' win shares have evolved. Together, these
                     visualizations underscore the competitive dynamics and changes in the F1 landscape over recent
                     years.
+                    """)
+
+# Driver Standing Subsection
+elif eda_section == "Driver Standing":
+    st.subheader("Driver Standing Progression")
+    visualization_option = st.sidebar.selectbox(
+        "Select Visualization",
+        ["Individual Driver Performance", "Top Drivers Over Years"]
+    )
+
+    if visualization_option == "Individual Driver Performance":
+        df_driver_standings = load_driver_standings_data()
+        unique_drivers = sorted(df_driver_standings['driverId'].unique())
+        selected_driver = st.sidebar.selectbox("Select Driver", options=unique_drivers)
+
+        # Checkboxes for controlling which plots to show
+        show_points = st.sidebar.checkbox("Show Points vs Year", value=True)
+        show_wins = st.sidebar.checkbox("Show Wins vs Year", value=True)
+        show_standing = st.sidebar.checkbox("Show Standing vs Year", value=True)
+
+        fig_points, fig_wins, fig_standing = plot_driver_progression(selected_driver)
+        
+        if fig_points and show_points:
+            st.write("### Points vs Year")
+            st.plotly_chart(fig_points, use_container_width=True)
+
+        if fig_wins and show_wins:
+            st.write("### Wins vs Year")
+            st.plotly_chart(fig_wins, use_container_width=True)
+
+        if fig_standing and show_standing:
+            st.write("### Standing vs Year")
+            st.plotly_chart(fig_standing, use_container_width=True)
+
+        st.markdown("""
+                    In this section, feel free to check different drivers and look into their higher-level aspects
+                    of performance over years! The drivers' list is pretty comprehensive. You probably endup 
+                    finding your favorite driver or drivers' of your favorite team. Who do you think is going to
+                    the next new world champion? Lando Norris? Charles Leclerc? George Russell? ...
+                    """)
+        
+    elif visualization_option == "Top Drivers Over Years":
+        top_n = st.sidebar.number_input("Select number of top drivers", min_value=1, max_value=20, value=10)
+        fig_top_drivers_by_points = plot_top_drivers_by_points(top=top_n)
+        fig_top_drivers_by_wins = plot_top_drivers_by_wins(top=top_n)
+        st.write("### By points")
+        st.plotly_chart(fig_top_drivers_by_points, use_container_width=True)
+        st.write("### By Wins")
+        st.plotly_chart(fig_top_drivers_by_wins, use_container_width=True)
+        st.markdown("""
+                    Here, you can clearly see the brutal dominance of Lewis Hamilton and Max Verstappen over other drivers from
+                    Mercedes and Red bull, respectively. You can also see drivers who are close to the end of
+                    their career, but given their previous or current team, they could manage to collect points
+                    and wins. 
+                    
+                    Interestingly, Sebastian Vettel, who retired at the end of 2022 season, and who
+                    has not been in good shape in the past couple of years and he is currently without team is
+                    also in the figures as they had previously showed a tremendous performance.
                     """)
