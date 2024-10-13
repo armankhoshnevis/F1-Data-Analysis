@@ -2,6 +2,11 @@ import pandas as pd
 import plotly.express as px
 import os
 
+def load_pit_stop_data():
+    file_path = os.path.join(os.path.dirname(__name__), '.', 'Datasets', 'pit_results.csv')
+    df_pit_results = pd.read_csv(file_path)
+    return df_pit_results
+
 def load_race_results_data():
     """Loads the race results data from CSV."""
     file_path = os.path.join(os.path.dirname(__name__), '.', 'Datasets', 'race_results.csv')
@@ -13,10 +18,10 @@ def load_race_results_data():
 
 def plot_avg_pit_stop_duration_by_circuit(year):
     """Plots the average pit stop duration by circuit for a given year."""
-    file_path = os.path.join(os.path.dirname(__name__), '.', 'Datasets', 'pit_results.csv')
-    df_pit_results = pd.read_csv(file_path)
+    df_pit_results = load_pit_stop_data()
     df_race_results = load_race_results_data()
-    race_schedule = pd.read_csv('race_schedule.csv')
+    file_path = os.path.join(os.path.dirname(__name__), '.', 'Datasets', 'race_schedule.csv')
+    race_schedule = pd.read_csv(file_path)
     
     df_race_results_reduced = df_race_results[['season', 'round', 'driverId', 'constructorId']]
     df_pit_results = df_pit_results.merge(df_race_results_reduced, on=['season', 'round', 'driverId'], how='left')
@@ -51,8 +56,7 @@ def plot_avg_pit_stop_duration_by_circuit(year):
     return fig
 
 def plot_pit_stop_duration_by_constructor(year):
-
-    df_pit_results = pd.read_csv('pit_results.csv')
+    df_pit_results = load_pit_stop_data()
     df_race_results = load_race_results_data()
 
     df_race_results_reduced = df_race_results[['season', 'round', 'driverId', 'constructorId']]
@@ -102,7 +106,7 @@ def plot_pit_stop_duration_by_constructor(year):
 
 def plot_pit_stop_count_by_lap(year=None, round_num=None):
     """Plots a histogram showing the count of pit stops by lap for a given year and round."""
-    df_pit_results = pd.read_csv('pit_results.csv')
+    df_pit_results = load_pit_stop_data()
 
     if year:
         df_pit_results = df_pit_results[df_pit_results['season'] == year]
