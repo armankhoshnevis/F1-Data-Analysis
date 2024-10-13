@@ -44,6 +44,12 @@ from utils.lap_time_vis import (
     plot_driver_lap_times
     )
 
+from utils.pit_stop_vis import (
+    plot_avg_pit_stop_duration_by_circuit,
+    plot_pit_stop_duration_by_constructor,
+    plot_pit_stop_count_by_lap
+)
+
 st.set_page_config(
     page_title="FDS Project - F1",
     page_icon="f1logo.png",
@@ -448,3 +454,42 @@ elif eda_section == "Race Results":
                     performance consistency. 
                     """)
 
+# Pit Stop Subsection
+elif eda_section == "Pit Stops":
+    st.subheader("Pit Stop Visualizations")
+    pit_stop_vis_option = st.sidebar.selectbox(
+        "Select Visualization",
+        ["Average Pit Stop Duration by Circuit", "Pit Stop Duration by Constructor", "Pit Stop Count by Lap"]
+    )
+
+    if pit_stop_vis_option == "Average Pit Stop Duration by Circuit":
+        year = st.sidebar.selectbox("Select Year", options=[2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017])
+        st.write(f"### Average Pit Stop Duration by Circuit for {year}")
+        fig_avg_pit_duration = plot_avg_pit_stop_duration_by_circuit(year)
+        st.plotly_chart(fig_avg_pit_duration, use_container_width=True)
+        st.markdown("""
+                    This bar chart displays the average pit stop duration for each circuit in a selected year.
+                    By comparing pit stop times across circuits, this visualization highlights the variability
+                    influenced by pit lane design and track layout. Differences in pit stop durations can impact
+                    race results and reflect how teams adjust their 1 or 2 pitstop strategy.
+                    """)
+
+    elif pit_stop_vis_option == "Pit Stop Duration by Constructor":
+        year = st.sidebar.selectbox("Select Year", options=[2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017])
+        st.write(f"### Pit Stop Duration by Constructor for {year}")
+        fig_pit_duration_by_constructor = plot_pit_stop_duration_by_constructor(year)
+        st.plotly_chart(fig_pit_duration_by_constructor, use_container_width=True)
+        st.markdown("""
+                    This box plot shows the distribution of pit stop durations for each constructor in a
+                    selected year. By comparing pit stop performance across teams, this visualization highlights
+                    variations in efficiency and precision. Constructors with consistently shorter and more stable
+                    pit stop times demonstrate high team coordination, while wider distributions may reflect
+                    inconsistencies or challenges in pit lane operations.
+                    """)
+
+    elif pit_stop_vis_option == "Pit Stop Count by Lap":
+        year = st.sidebar.selectbox("Select Year", options=[2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017])
+        round_num = st.sidebar.selectbox("Select Round", options=list(range(1, 23)))
+        st.write(f"### Pit Stop Count by Lap for Season {year}, Round {round_num}")
+        fig_pit_count_by_lap = plot_pit_stop_count_by_lap(year, round_num)
+        st.plotly_chart(fig_pit_count_by_lap, use_container_width=True)
