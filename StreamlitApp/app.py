@@ -5,7 +5,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from utils.race_schedule_vis import (
     f1_circuit_world_map,
-    races_by_continent
+    races_by_continent,
+    races_by_circuit,
+    races_by_country
     )
 
 st.set_page_config(
@@ -86,3 +88,29 @@ elif eda_section == "Race Circuits":
                     shown in terms of absolute numbers and percentages, highlighting their relative contributions.
                     """
         )
+    
+    elif visualization == "Races by Circuit/Country":
+        start_year, end_year = st.sidebar.select_slider(
+            "Select Year Range",
+            options=list(range(2017, 2025)),
+            value=(2017, 2024)
+        )
+        y_axis_choice = st.sidebar.selectbox(
+            "Select Y-Axis",
+            options=["Circuit", "Country"]
+        )
+        if y_axis_choice == "Circuit":
+            fig = races_by_circuit(start_year=start_year, end_year=end_year)
+        elif y_axis_choice == "Country":
+            fig = races_by_country(start_year=start_year, end_year=end_year)
+        st.plotly_chart(fig, use_container_width=True)
+        st.markdown("""
+                    This bar chart showcases the number of Formula 1 races held in each country/circuit over the
+                    selected time frame. The visualization highlights the USA’s growing influence on the F1 
+                    calendar, partially due to the attractive documentary named Drive to Survive by Netflix,
+                    currently hosting three races each season in Austin, Miami, and Las Vegas. It also reflects
+                    the enduring presence of classic circuits in countries such as Monaco, the UK, Hungary, and
+                    Austria, which have consistently retained their places in the F1 schedule. Additionally, this
+                    chart reveals countries that were once hosts but have since departed from the calendar,
+                    underscoring F1's dynamic global footprint.
+                    """)
