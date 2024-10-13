@@ -13,8 +13,8 @@ from utils.race_schedule_vis import (
 from utils.constructor_standing_vis import (
     plot_constructor_ranking_vs_year,
     plot_constructor_wins_vs_year,
-    plot_constructor_points_vs_year
-)
+    plot_constructor_points_vs_year,
+    )
 
 st.set_page_config(
     page_title="FDS Project - F1",
