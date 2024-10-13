@@ -26,6 +26,20 @@ from utils.driver_standing_vis import (
     plot_top_drivers_by_wins
     )
 
+
+from utils.race_results_vis import (
+    load_race_results_data,
+    plot_grid_vs_position, 
+    plot_mechanical_issues,
+    get_merged_race_driver_data,
+    plot_avg_points_vs_age,
+    plot_avg_position_vs_age,
+    plot_avg_max_speed_vs_age,
+    plot_top_constructors_podiums,
+    plot_top_drivers_podiums,
+    plot_head_to_head_performance
+)
+
 st.set_page_config(
     page_title="FDS Project - F1",
     page_icon="f1logo.png",
@@ -261,3 +275,172 @@ elif eda_section == "Driver Standing":
                     has not been in good shape in the past couple of years and he is currently without team is
                     also in the figures as they had previously showed a tremendous performance.
                     """)
+
+# Race Results Subsection
+elif eda_section == "Race Results":
+    st.subheader("Race Results Visualizations")
+    
+    race_result_visualization = st.sidebar.selectbox(
+        "Select Visualization",
+        ["Grid Start vs Final Position", "Mechanical Issues", "Age-Based Performance", 
+         "Podium Counts", "Driver's Head-to-Head Performance", "Lap Times"]
+    )
+    
+    if race_result_visualization == "Grid Start vs Final Position":
+        df_race_results = load_race_results_data()
+        min_season = int(df_race_results['season'].min())
+        max_season = int(df_race_results['season'].max())
+        selected_season_range = st.sidebar.slider(
+            "Select Season Range",
+            min_value=min_season,
+            max_value=max_season,
+            value=(min_season, max_season)
+        )
+        st.write(f"### Impact of Grid Start on Final Position ({selected_season_range[0]} - {selected_season_range[1]})")
+        fig_grid_vs_position = plot_grid_vs_position(selected_season_range)
+        st.plotly_chart(fig_grid_vs_position, use_container_width=True)
+        st.markdown("""
+                    This scatter plot highlights the relationship between drivers' starting grid positions and 
+                    their final race positions across selected seasons. Generally, starting higher on the grid
+                    correlates with finishing in a better position, with many drivers either maintaining or
+                    improving their positions. However, qualifying (starting grid position) results are not the
+                    only effective parameter. Moreover, some weird data points are visible, such as cases where
+                    drivers started from the pit lane (indicated by a grid position of zero) or were disqualified.
+
+                    As the season range expands, this correlation may become less distinct, reflecting the 
+                    unpredictability of F1 races and the various factors that can impact race outcomes.
+                    """)
+
+    elif race_result_visualization == "Mechanical Issues":
+        df_race_results = load_race_results_data()
+        min_season = int(df_race_results['season'].min())
+        max_season = int(df_race_results['season'].max())
+        selected_season_range = st.sidebar.slider(
+            "Select Season Range",
+            min_value=min_season,
+            max_value=max_season,
+            value=(min_season, max_season)
+        )
+        st.write(f"### Top Mechanical Issues by Constructor ({selected_season_range[0]} - {selected_season_range[1]})")
+        fig_pie, fig_stacked_bar = plot_mechanical_issues(selected_season_range)
+        st.plotly_chart(fig_pie, use_container_width=True)
+        st.write(f"### Constructors Reliability ({selected_season_range[0]} - {selected_season_range[1]})")
+        st.plotly_chart(fig_stacked_bar, use_container_width=True)
+        st.markdown("""
+                    The pie chart illustrates the most common mechanical failures faced by constructors over the
+                    years. Beyond the engine, which is the core of any F1 car, brakes, power units, gearboxes, and
+                    hydraulic systems also emerge as critical areas requiring meticulous design and maintenance.
+                    The 'Other' category, comprising roughly 22%, underscores the variety of components that can
+                    fail, reflecting the complexity of F1 vehicles.
+
+                    The stacked bar chart further explores constructors' reliability over time, revealing how
+                    mechanical issues have impacted different teams throughout specific periods. This
+                    visualization captures the variability in how teams address and evolve their cars' reliability
+                    in response to these ongoing challenges.
+                    """)
+    
+    elif race_result_visualization == "Age-Based Performance":
+        
+        age_performance_vis = st.sidebar.selectbox(
+            "Select Performance Metric",
+            ["Average Points vs Age", "Average Position vs Age", "Average Max Speed vs Age"]
+        )
+        
+        df_merged = get_merged_race_driver_data()
+        
+        if age_performance_vis == "Average Points vs Age":
+            fig_avg_points = plot_avg_points_vs_age()
+            st.plotly_chart(fig_avg_points, use_container_width=True)
+
+        elif age_performance_vis == "Average Position vs Age":
+            fig_avg_position = plot_avg_position_vs_age()
+            st.plotly_chart(fig_avg_position, use_container_width=True)
+
+        elif age_performance_vis == "Average Max Speed vs Age":
+            fig_avg_max_speed = plot_avg_max_speed_vs_age()
+            st.plotly_chart(fig_avg_max_speed, use_container_width=True)
+        
+        st.markdown("""
+                    These scatter plots display the relationship between drivers' ages and their average points,
+                    positions, and maximum speeds across seasons. While it's generally expected that driver
+                    performance declines as they surpass a certain age, the data reveals that this trend is not as
+                    pronounced today. This resilience can be attributed to modern drivers' commitment to rigorous
+                    training, professional lifestyles, and mental discipline, allowing them to maintain 
+                    competitive performance even as they age.
+                    """)
+    
+    elif race_result_visualization == "Podium Counts":
+        podium_option = st.sidebar.selectbox(
+            "Podium Counts for:",
+            ["Drivers", "Constructors"]
+        )
+        top_n = st.sidebar.number_input("Select number of top performers", min_value=1, max_value=20, value=6)
+        df_race_results = load_race_results_data()
+        min_season = int(df_race_results['season'].min())
+        max_season = int(df_race_results['season'].max())
+        selected_season_range = st.sidebar.slider(
+            "Select Season Range",
+            min_value=min_season,
+            max_value=max_season,
+            value=(min_season, max_season)
+        )
+        if podium_option == "Drivers":
+            st.write(f"### Top {top_n} Drivers Podium Count ({selected_season_range[0]} - {selected_season_range[1]})")
+            fig_top_drivers_podiums = plot_top_drivers_podiums(top_n=top_n, season_range=selected_season_range)
+            st.plotly_chart(fig_top_drivers_podiums, use_container_width=True)
+        elif podium_option == "Constructors":
+            st.write(f"### Top {top_n} Constructors Podium Count ({selected_season_range[0]} - {selected_season_range[1]})")
+            fig_top_constructors_podiums = plot_top_constructors_podiums(top_n=top_n, season_range=selected_season_range)
+            st.plotly_chart(fig_top_constructors_podiums, use_container_width=True)
+        st.markdown("""
+                    These stacked bar charts offer a detailed look at the performance of top drivers and
+                    constructors based on their podium finishes (1st, 2nd, and 3rd places). By adjusting the year
+                    range and number of top performers displayed, you can explore the evolving landscape of 
+                    dominance in Formula 1. This dynamic visualization provides insights into how certain drivers 
+                    and teams consistently secure podium finishes, reflecting their competitive edge across seasons.
+                    """)
+        
+    elif race_result_visualization == "Driver's Head-to-Head Performance":
+        df_race_results = load_race_results_data()
+        
+        selected_season = st.sidebar.selectbox("Select Season", options=sorted(df_race_results['season'].unique(), reverse=True))
+        
+        constructors_in_season = sorted(df_race_results[df_race_results['season'] == selected_season]['constructorId'].unique())
+        selected_constructor = st.sidebar.selectbox("Select Constructor", options=constructors_in_season)
+        
+        st.write(f"### Head-to-Head Performance for {selected_constructor} in {selected_season}")
+        fig_head_to_head, error = plot_head_to_head_performance(df_race_results, year=selected_season, constructor_id=selected_constructor)
+        
+        if fig_head_to_head:
+            st.plotly_chart(fig_head_to_head, use_container_width=True)
+        else:
+            st.write(error)
+        st.markdown("""
+                    This bar chart provides a head-to-head comparison between two drivers from the same
+                    constructor over a selected season. It highlights each driver's performance in terms of
+                    finishing position and grid position, revealing who consistently finishes ahead. Intra-team
+                    comparisons like this are a critical factor in assessing a driver's standing within the team.
+                    Underperforming compared to a teammate can intensify pressure on drivers, as teams often use
+                    these comparisons to evaluate a driver's ability to maximize the car's potential.
+                    """)
+    
+    elif race_result_visualization == "Lap Times":
+        lap_times_df = load_lap_times_data()
+        
+        selected_season = st.sidebar.selectbox("Select Season", options=sorted(lap_times_df['season'].unique(), reverse=True))
+        rounds_in_season = lap_times_df[lap_times_df['season'] == selected_season]['round'].unique()
+        selected_round = st.sidebar.selectbox("Select Round", options=sorted(rounds_in_season))
+        
+        lower_percentile = st.sidebar.slider("Lower Percentile", 0, 50, 5)
+        upper_percentile = st.sidebar.slider("Upper Percentile", 50, 100, 95)
+        
+        st.write(f"### Lap Times Box Plot for Season {selected_season}, Round {selected_round}")
+        fig_lap_times = plot_driver_lap_times(selected_season, selected_round, lower_percentile, upper_percentile)
+        st.plotly_chart(fig_lap_times, use_container_width=True)
+        st.markdown("""
+                    This box plot visualizes the lap times of all drivers for a selected race, with adjustable lower and upper
+                    limits to filter out extreme outliers (such as laps with pit stops or a safty car). By focusing
+                    on the middle range of lap times, this visualization provides a clearer view of each driver's
+                    performance consistency. 
+                    """)
+
