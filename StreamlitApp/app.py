@@ -21,7 +21,7 @@ from utils.constructor_standing_vis import (
 
 st.set_page_config(
     page_title="FDS Project - F1",
-    # page_icon="f1logo.png",
+    page_icon="f1logo.png",
     layout="wide"
 )
 
