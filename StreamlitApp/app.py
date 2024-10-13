@@ -26,7 +26,6 @@ from utils.driver_standing_vis import (
     plot_top_drivers_by_wins
     )
 
-
 from utils.race_results_vis import (
     load_race_results_data,
     plot_grid_vs_position, 
@@ -39,6 +38,11 @@ from utils.race_results_vis import (
     plot_top_drivers_podiums,
     plot_head_to_head_performance
 )
+
+from utils.lap_time_vis import (
+    load_lap_times_data, 
+    plot_driver_lap_times
+    )
 
 st.set_page_config(
     page_title="FDS Project - F1",
