@@ -23,7 +23,6 @@ st.set_page_config(
     page_title="FDS Project - F1",
     page_icon="f1logo.png",
     layout="wide",
-    theme="light"
 )
 
 # Sidebar for EDA section
