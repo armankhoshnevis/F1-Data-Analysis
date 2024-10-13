@@ -1,6 +1,7 @@
 import plotly.express as px
 import pandas as pd
 import os
+
 def load_driver_standings_data():
     """Loads and updates the driver standings data."""
     file_path = os.path.join(os.path.dirname(__name__), '.', 'Datasets', 'driver_standings.csv')
