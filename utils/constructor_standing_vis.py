@@ -1,8 +1,10 @@
 import plotly.express as px
 import pandas as pd
+import os
 
 def load_constructor_standings_data():
-    df = pd.read_csv('constructor_standings.csv')
+    file_path = os.path.join(os.path.dirname(__name__), '.', 'Datasets', 'constructor_standings.csv')
+    df = pd.read_csv(file_path)
 
     df['constructorId'] = df['constructorId'].replace({'alphatauri': 'rb'})
     df['constructorName'] = df['constructorName'].replace({'AlphaTauri': 'RB F1 Team'})
