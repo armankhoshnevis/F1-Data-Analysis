@@ -92,8 +92,8 @@ if eda_section == "Introduction":
                 observe the impact of the regulation changes in 2022, along with the dominance and team battles in
                 recent years.
                 
-                Explore the data through interactive visualization tools on this website and uncover the dynamics
-                of F1. Enjoy your journey into the world of data-driven motorsport!
+                Explore the data through the interactive visualization tools prepared on this website and uncover the
+                dynamics of F1. Enjoy your journey into the world of data-driven motorsport!
                 
                 Prepared by Arman Khoshnevis (khoshne1@msu.edu), Fall 2024
                 """)
