@@ -8,3 +8,7 @@ Datasets:
 
 The Ergast API (https://ergast.com/mrd/) is utilized for collecting the datasets corresponding to different aspects of the F1 races corresponding the year range from 2017 to 2024 (Round 18, Singapore Grand Prix). The Ergast Developer API is an experimental web service which provides a historical record of motor racing data for non-commercial purposes. The API provides data for the Formula 1 series, from the beginning of the world championships in 1950.
 In this directory you can find the collected data in the csv format. Also, Fetch_Data.ipynb provides the codes used for downloading the data from the API. These csv files are used for visualization purposes.
+
+StreamlitApp:
+
+This directory contains the app.py code which is linked to the Streamlit for deploying the website corresponding to this project. Inside this app, all the visualization functions that are provided in the utils directory are imported first. This app is designed to be as interactive as possible so that users can explore the data more in depth and gain more understanding.
