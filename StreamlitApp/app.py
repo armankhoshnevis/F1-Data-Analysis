@@ -52,7 +52,7 @@ from utils.pit_stop_vis import (
 
 st.set_page_config(
     page_title="FDS Project - F1",
-    page_icon="f1logo.png",
+    page_icon=os.path.join(os.path.dirname(__file__), "f1logo.png"),
     layout="wide",
 )
 
