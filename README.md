@@ -25,3 +25,5 @@ Inside this directory, all the visualizations functions corresponding to the plo
 
 Notes:
 I replace alphatauri team with rb and remove the discontinued teams toro_rosso, force_india, and racing_point to avoid introducing bias into the analysis.
+
+In the requirements.txt, I have specified the version of the packages required for the Streamlit app to deploy the web page.
