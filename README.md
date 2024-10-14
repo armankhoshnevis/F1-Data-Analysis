@@ -15,4 +15,8 @@ This directory contains the app.py code which is linked to the Streamlit for dep
 
 utils:
 
-Inside this directory, all the visualizations functions corresponding to the plots/graphs embedded in the Streamlit website is provided. It should be noted that the relative address to the each required dataset (.csv file) is declared as required. Be mindful of this note if you want to clone the repository.
+Inside this directory, all the visualizations functions corresponding to the plots/graphs embedded in the Streamlit website is provided. It should be noted that the relative address to the each required dataset (.csv file) is declared as required. Be mindful of this note if you want to clone the repository. Furthermore, to explore how does each visualization function work, you can copy paste the function of interest (plus the necessary load_data functions) into a Jupyter notebook. Then call the function and display the visualization using .show() command.
+
+Notes:
+
+Replace alphatauri with rb, remove the results of discontinued_teams = ['toro_rosso', 'force_india', 'racing_point']
