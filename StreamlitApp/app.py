@@ -66,6 +66,7 @@ eda_section = st.sidebar.selectbox("Select Section", ["Introduction", "Race Circ
 if eda_section == "Introduction":
     image_path = os.path.join(os.path.dirname(__file__), "DALLE_2024_10_10.webp")
     st.image(image_path, caption="AI-Generated Picture, DALL·E, 2024-10-10", use_column_width=True)
+    image_path = os.path.join(os.path.dirname(__file__), "f1logo.png")
     st.image("f1logo.png", caption="test", use_column_width=True)
     st.markdown("""
                 ### Hello F1
