@@ -12,3 +12,7 @@ In this directory you can find the collected data in the csv format. Also, Fetch
 StreamlitApp:
 
 This directory contains the app.py code which is linked to the Streamlit for deploying the website corresponding to this project. Inside this app, all the visualization functions that are provided in the utils directory are imported first. This app is designed to be as interactive as possible so that users can explore the data more in depth and gain more understanding.
+
+utils:
+
+Inside this directory, all the visualizations functions corresponding to the plots/graphs embedded in the Streamlit website is provided. It should be noted that the relative address to the each required dataset (.csv file) is declared as required. Be mindful of this note if you want to clone the repository.
