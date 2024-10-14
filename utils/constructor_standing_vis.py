@@ -134,7 +134,6 @@ def plot_constructor_points_vs_year(start_year=2017, end_year=2024):
     df_constructor_standings['season'] = df_constructor_standings['season'].astype(int)
     df_constructor_standings['points'] = df_constructor_standings['points'].astype(float)
     
-    # Filter data within the selected year range
     df_filtered = df_constructor_standings[(df_constructor_standings['season'] >= start_year) & 
                                            (df_constructor_standings['season'] <= end_year)]
 
