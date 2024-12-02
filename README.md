@@ -15,7 +15,7 @@ Here, I tried to impute the missing lap times for dirves with DNF (Did Not Finis
 
 **StreamlitApp**:
 
-This directory contains the app.py code which is linked to the Streamlit for deploying the website corresponding to this project. Inside this app, all the visualization functions that are provided in the utils directory are imported first. This app is designed to be as interactive as possible so that users can explore the data more in depth and gain more understanding. The web app is hopefully accessible via this [link](https://fdsmidterm-n9bhczdbje5okeen3vs5j4.streamlit.app/)!
+This directory contains the app.py code which is linked to the Streamlit for deploying the website corresponding to this project. Inside this app, all the visualization functions that are provided in the utils directory are imported first. This app is designed to be as interactive as possible so that users can explore the data more in depth and gain more understanding. The web app is hopefully accessible via this [link](https://fdsmidterm-he7wxdu5xfpt6t7zqnxfgc.streamlit.app/)!
 
 **utils**:
 
