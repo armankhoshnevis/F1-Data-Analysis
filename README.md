@@ -10,8 +10,7 @@ Each directory in this repository is described as follows:
 
 **Datasets**:
 
-The [Ergast API](https://ergast.com/mrd/) is utilized for collecting the datasets corresponding to different aspects of the F1 races corresponding the year range from 2017 to 2024 (Round 18, Singapore Grand Prix). The Ergast Developer API is an experimental web service which provides a historical record of motor racing data for non-commercial purposes. The API provides data for the Formula 1 series, from the beginning of the world championships in 1950.
-In this directory you can find the collected data in the csv format. Also, Fetch_Data.ipynb provides the codes used for downloading the data from the API. These csv files are used for visualization purposes.
+The [Ergast API](https://ergast.com/mrd/) is utilized for collecting the datasets corresponding to different aspects of the F1 races corresponding the year range from 2017 to 2024. The Ergast Developer API is an experimental web service which provides a historical record of motor racing data for non-commercial purposes. The API provides data for the Formula 1 series, from the beginning of the world championships in 1950. In this directory you can find the collected data in the csv format. Also, Fetch_Data.ipynb provides the codes used for downloading the data from the API. These csv files are used for visualization purposes.
 
 **ImputationAttempt**:
 
