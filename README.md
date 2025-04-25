@@ -1,6 +1,6 @@
 # Foundation of Data Science (CMSE 830 - MSU) - MidTerm Project: F1 Data Analysis
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
   <img src="StreamlitApp/DALLE_2024_10_10.webp" alt="Architecture Diagram" width="75%">
 </div>
 
